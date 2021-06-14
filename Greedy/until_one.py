@@ -29,5 +29,5 @@ while True:
     n //= k
 
 
-result += (n - 1)
+result += (n - 1) # result
 print(result)
