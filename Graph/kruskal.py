@@ -36,4 +36,3 @@ for edge in edges:
         result += cost
 
 print(result)
-        
