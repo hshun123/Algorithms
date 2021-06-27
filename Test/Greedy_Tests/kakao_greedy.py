@@ -1,5 +1,6 @@
 import heapq
 
+# programmers kakao algorithm tests
 def solution(food_times, k):
     if sum(food_times) <= k:
         return -1
