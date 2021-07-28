@@ -34,9 +34,7 @@ def dijkstrat(start):
 dijkstrat(start)
 
 max_node = 0
-
 max_distance = 0
-
 result = []
 
 for i in range(1, n + 1):
