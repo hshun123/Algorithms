@@ -32,6 +32,7 @@ def solution(key, lock):
         key = rotate_a_matrix_by_90_degree(key)
         for x in range(n * 2):
             for y in range(n * 2):
+                # set key into 
                 for i in range(m):
                     for j in range(m):
                         new_lock[x + i][y + j] += key[i][j]
@@ -44,4 +45,3 @@ def solution(key, lock):
                         new_lock[x + i][y + j] -= key[i][j]
 
     return False
-

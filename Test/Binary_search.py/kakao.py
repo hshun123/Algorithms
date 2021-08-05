@@ -20,6 +20,14 @@ def solution(words, queries):
 
     for i in range(10001):
         array[i].sort()
-        reversed_array.sort()
+        reversed_array[i].sort()
 
-    for q
+    for q in queries:
+        if q[0] != '?':
+            res = count_by_range(array[len(q)], q.replace('?', 'a'), q.replace('?', 'z'))
+        else:
+            res = count_by_range(reversed_array[len(q)], q[::-1].replace('?', 'a'), q[::-1].replace('?', 'z'))
+
+        answer.append(res)
+
+    return answer
